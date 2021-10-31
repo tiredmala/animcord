@@ -1,0 +1,399 @@
+/**
+* @name Animcord
+* @author malasangre
+* @description Make discord more responsive and fluid with simple animations
+* @source https://github.com/tiredmala/animcord
+* @authorId 699552486360612954
+* @version 0.1
+*/
+:root{
+    --radiositycolor: rgba(0,0,0, 0.3);
+    --applethingsbshadow: 0 10px 20px 0 var(--radiositycolor);
+}
+
+.sidebar-CFHs9e{padding-top: 10px;padding-bottom: 10px;padding-left: 10px;
+transition:all 300ms ease;}
+.sidebarRegion-VFTUkN {flex: 0 0 auto; transition:all 300ms ease;}
+.contentColumn-2hrIYH, .customColumn-Rb6toI {max-width: unset; transition:all 300ms ease;}
+.platform-osx .sidebar-CFHs9e{padding-top: 30px; transition:all 300ms ease;}
+
+.layers-3iHuyZ>.layer-3QrUeG:first-child{
+    transform: scale(1) !important;
+    opacity: 1 !important;
+}
+
+a>.assetsLargeImageUserPopout-3Pp8BK[src^="https://i.scdn.co/image/"]{
+    width:50px;
+    height:50px;
+    transition: all 300ms;
+    }
+    a>.assetsLargeImageUserPopout-3Pp8BK[src^="https://i.scdn.co/image/"]:hover {
+    width:100px;
+    height:100px;
+    transition: all 300ms;
+    }
+
+a>.assetsLargeImageUserPopout-3Pp8BK[src^="https://i.scdn.co/image/"]:hover .tooltip-2QfLtc{
+        display: none !important;
+    }
+
+.attachment-33OFj0,
+.loadingPopout-qYljDW,
+.embedVideoImageComponentInner-2Ujh_1,
+.imageWrapper-2p5ogY
+{
+    border-radius: 10px;
+    transition: transform 200ms;
+}
+.item-1tOPte,
+.embedSpotify-tvxDCr.embedWrapper-lXpS3L{
+    border-radius: 4px;
+}
+.emoji{
+    border-radius: 3px;
+}
+.avatarUploader-3XDtmn.avatarUploader-1Y-wly .avatarUploaderInner-3UNxY3>*,
+.avatarUploader-3XDtmn.avatarUploader-1Y-wly .avatarUploaderInner-3UNxY3{
+    pointer-events: initial !important; 
+}
+.small-3iVZYw:hover .avatarUploaderInner-3UNxY3{
+    border-radius: 4px;
+    width: 150px;
+    height: 150px;
+}
+.avatarUploaderInner-3UNxY3{
+box-shadow: rgba(0, 0, 0, 0.308) 0px 8px 24px;
+}
+.small-3iVZYw:hover .avatarUploaderIcon-3UIzEQ{
+    border-radius: 4px;
+    left: 150%;
+}
+
+.avatarUploaderInner-3UNxY3{
+    transition: all 250ms ease;
+}
+
+.avatarUploader-3XDtmn.avatarUploader-1Y-wly .avatarUploaderHint-3SN212, .avatarUploaderIndicator-2G-aIZ, .avatarUploaderInner-3UNxY3 [class^=fileInput], .bannerUploaderInnerSquare-1ddxpx [class^=fileInput]{
+    display: inline !important;
+}
+.buttonsWrapper-2spIeK .disabledButtonWrapper-3wH6-b{
+    display: none;
+}
+.miniAvatar-2CIVlE.baseAvatar-3Nvk7n.wrapper-3t9DeA:hover{
+    width: 38px !important; 
+    height: 38px !important;
+}
+
+.wrapper-3t9DeA{
+    transition: width 200ms ease, height 200ms ease;
+}
+.bannerImage-3KhIJ6
+{
+    border-radius: 5% !important;
+}
+.bannerPremium-2hSAwz{
+    border-bottom-left-radius: 4%;
+    border-bottom-right-radius: 4%;
+}
+
+.animatedContainer-1NSq4T{
+    box-shadow: rgba(255, 255, 255, 0.075) 0px 0px 0px 3px !important;
+
+}
+
+/* Animate spotify bar on hover */
+.activity-2INFPu:hover .bar-3urHkF{
+    transform: scaleY(2);
+    margin-bottom: 8px;
+}
+.activity-2INFPu:hover .textLeft-3EZXG6,
+.activity-2INFPu:hover .textRight-1XO5Ye{
+    font-size: 14px;
+}
+.textLeft-3EZXG6, .textRight-1XO5Ye{
+    transition: font-size 200ms ease;
+}
+
+[class*="headerTextNormal-2mGWX3 headerText-1HLrL7 flex-1O1GKY marginBottom8-AtZOdT base-1x0h_U size12-3cLvbJ"]:hover .theme-dark .lookFilled-1Gx00P.colorGrey-2DXtkV{
+    background-color: #1DB954;
+}
+
+.activityName-1IaRLn:hover, 
+.nameNormal-2lqVQK:hover,
+.nameWrap-3Z4G_9:hover{
+    font-weight: bold;
+}
+.activityName-1IaRLn, .nameNormal-2lqVQK, .nameWrap-3Z4G_9{
+    transition: font-weight 200ms ease;
+}
+
+.spotifyIcon-2J9kSv:hover [d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0ZM14.5625 14.4375C14.3791 14.7161 14.0145 14.8107 13.7188 14.6562C11.375 13.2188 8.40625 12.9062 4.9375 13.6875C4.71979 13.7377 4.49182 13.668 4.33945 13.5046C4.18709 13.3412 4.13348 13.1089 4.19883 12.8952C4.26417 12.6816 4.43854 12.519 4.65625 12.4688C8.46875 11.5938 11.7188 11.9688 14.375 13.5938C14.5149 13.6781 14.6141 13.816 14.6495 13.9755C14.685 14.1349 14.6535 14.3019 14.5625 14.4375ZM15.8125 11.6875C15.7053 11.8622 15.5328 11.9869 15.3333 12.0338C15.1338 12.0807 14.9238 12.0461 14.75 11.9375C12.0625 10.2812 7.96875 9.8125 4.78125 10.7812C4.5133 10.8594 4.22401 10.7887 4.02236 10.5957C3.8207 10.4027 3.73731 10.1168 3.80361 9.84569C3.8699 9.57457 4.0758 9.3594 4.34375 9.28125C7.96875 8.1875 12.5 8.71875 15.5625 10.625C15.9134 10.8575 16.0229 11.3229 15.8125 11.6875ZM15.9062 8.875C12.6875 6.96875 7.375 6.78125 4.28125 7.71875C3.81691 7.79284 3.36952 7.5115 3.23513 7.0609C3.10074 6.61031 3.32093 6.12986 3.75 5.9375C7.28125 4.875 13.1562 5.0625 16.875 7.28125C17.0893 7.40709 17.2434 7.61436 17.3023 7.85577C17.3612 8.09717 17.3198 8.35214 17.1875 8.5625C16.9054 8.98221 16.3499 9.1177 15.9062 8.875Z"]{
+    fill: gray !important
+}
+[d="M10 0C4.47715 0 0 4.47715 0 10C0 15.5228 4.47715 20 10 20C15.5228 20 20 15.5228 20 10C20 7.34784 18.9464 4.8043 17.0711 2.92893C15.1957 1.05357 12.6522 0 10 0ZM14.5625 14.4375C14.3791 14.7161 14.0145 14.8107 13.7188 14.6562C11.375 13.2188 8.40625 12.9062 4.9375 13.6875C4.71979 13.7377 4.49182 13.668 4.33945 13.5046C4.18709 13.3412 4.13348 13.1089 4.19883 12.8952C4.26417 12.6816 4.43854 12.519 4.65625 12.4688C8.46875 11.5938 11.7188 11.9688 14.375 13.5938C14.5149 13.6781 14.6141 13.816 14.6495 13.9755C14.685 14.1349 14.6535 14.3019 14.5625 14.4375ZM15.8125 11.6875C15.7053 11.8622 15.5328 11.9869 15.3333 12.0338C15.1338 12.0807 14.9238 12.0461 14.75 11.9375C12.0625 10.2812 7.96875 9.8125 4.78125 10.7812C4.5133 10.8594 4.22401 10.7887 4.02236 10.5957C3.8207 10.4027 3.73731 10.1168 3.80361 9.84569C3.8699 9.57457 4.0758 9.3594 4.34375 9.28125C7.96875 8.1875 12.5 8.71875 15.5625 10.625C15.9134 10.8575 16.0229 11.3229 15.8125 11.6875ZM15.9062 8.875C12.6875 6.96875 7.375 6.78125 4.28125 7.71875C3.81691 7.79284 3.36952 7.5115 3.23513 7.0609C3.10074 6.61031 3.32093 6.12986 3.75 5.9375C7.28125 4.875 13.1562 5.0625 16.875 7.28125C17.0893 7.40709 17.2434 7.61436 17.3023 7.85577C17.3612 8.09717 17.3198 8.35214 17.1875 8.5625C16.9054 8.98221 16.3499 9.1177 15.9062 8.875Z"]{
+    transition: fill 200ms ease;
+}
+
+.activity-2INFPu:hover .barInner-3NDaY_{
+    background-color: #1DB954;
+}
+
+.ephemeral-1PsL1r:before, .mentioned-xhSam7:before, .replying-1x3H0T:before{
+    border-radius: 42px  !important;
+} 
+
+
+.role-2irmRk:hover{
+    background-color: inherit;
+    filter:contrast(0.9);
+}
+
+.role-2irmRk:hover .roleCircle-3xAZ1j{
+    border-radius: 20% !important;
+}
+.role-2irmRk,
+.roleCircle-3xAZ1j{
+    transition: background-color 200ms ease, filter 200ms ease, border-radius 200ms ease;
+}
+
+.icon-1DeIlz:hover{
+    color: rgb(212, 208, 208);
+}
+.name-23GUGE,
+.icon-1DeIlz{
+transition: color 200ms ease;
+}
+.imageWrapper-2p5ogY:hover{
+    transform: scale(1.2);
+    box-shadow: var(--applethingsbshadow);
+    z-index: 3;
+}
+
+.embedVideo-3nf0O9 .imageWrapper-2p5ogY:hover{
+    transform: scale(1) !important;
+    z-index: 0 !important;
+}
+
+.message-2qnXI6.selected-2P5D_Z, .mouse-mode.full-motion .message-2qnXI6:hover{
+    border-radius: 10px;
+    margin-left: 3px;
+}
+
+.container-6sXIoE.maximized-vv2Wr0 .cover-SwJ-ck{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.top-28JiJ- .selected-3s45Ha.themed-OHr7kt.item-PXvHYJ, .top-28JiJ- .themed-OHr7kt.item-PXvHYJ:active{
+    transition: 200ms ease;
+}
+
+.message-2qnXI6.selected-2P5D_Z, .mouse-mode.full-motion .message-2qnXI6{
+    transition: 200ms ease;
+}
+
+.mouse-mode.full-motion .message-2qnXI6:active{
+    background-color: rgba(4, 4, 5, 0.1);
+}
+
+.scrollableContainer-2NUZem:active{
+    background-color:rgba(4, 4, 5, 0.07) ;
+}
+.scrollableContainer-2NUZem{
+    transition: background-color 600ms ease;
+}
+
+.embedVideoImageComponentInner-2Ujh_1:hover,
+.mainContent-u_9PKf:hover,
+.channel-2QD9_O:hover,
+.feature-2w65J5:hover,
+.item-26Dhrx:hover,
+.membersWrap-2h-GB4 .layout-2DM8Md:hover,
+.app-2rEoOp button:hover{
+    transform: scale(1.1);
+}
+
+.layout-2DM8Md:hover{
+    transform: scale(1.01);
+}
+
+.mainContent-u_9PKf,
+.channel-2QD9_O,
+.feature-2w65J5,
+.item-26Dhrx,
+.bar-3urHkF,
+.app-2rEoOp button,
+.layout-2DM8Md{
+    transition: transform 200ms;
+}
+
+.avatar-1BDn8e{
+    transition: border-radius 250ms;
+}
+
+.avatar-1BDn8e:hover,
+.pngImage-33yLRP{
+    border-radius: 4px;
+}
+
+.noItemsCard-3TSAgO:hover,
+.feature-2w65J5:hover,
+.paymentBanner-2qO5t0:hover,
+.detailsBlock-FoDTGA:hover,
+.form-26zE04:hover,
+.billingInformation-1MZXzx:hover{
+    filter: contrast(0.97);
+}
+    .noItemsCard-3TSAgO,
+    .feature-2w65J5,
+    .paymentBanner-2qO5t0,
+    .detailsBlock-FoDTGA,
+    .form-26zE04,
+    .billingInformation-1MZXzx
+    {
+        transition: filter 200ms;
+    }
+.message-2qnXI6.selected-2P5D_Z, .mouse-mode.full-motion .message-2qnXI6:hover
+{
+    transition: background-color 100ms;
+}
+
+.colorDefault-2K3EoJ.focused-3afm-j,
+.wrapper-3D2qGf,
+.textarea-2r0oV8,
+.barInner-3NDaY_,
+.button-14-BFJ.enabled-2cQ-u7,
+.item-26Dhrx,
+.timeline-UWmgAx .barFill-Dhkah7,
+.peopleListItem-2nzedh,
+.colorDefault-2K3EoJ{
+    transition: background-color 200ms;
+}
+.menu-3sdvDG,
+.emojiPicker-3PwZFl{
+    animation: anim1 150ms ease;
+    transform-origin: top;
+  }
+
+  .theme-dark .tooltip-2QfLtc, .theme-light .tooltip-2QfLtc,
+  .container-3XJ8ns,
+  .attachedBars-tZDmyV,
+  .themedPopout-1TrfdI,
+  .panel-24C3ux,
+  .autocompletePopout-3RFUaB{
+    animation: anim1 150ms ease;
+    transform-origin: bottom;
+  }
+
+  .container-2dqNWc,
+  .emojiSection-3Fb9ix,
+  .streamPreviewWrapper-2DSWOK{
+      animation: anim1 150ms ease;
+      transform-origin: left;
+  }
+
+
+
+.userPopout-xaxa6l,
+.quickswitcher-3JagVE,
+.drawerSizingWrapper-17Mss4,
+.recentMentionsPopout-3rCiI6,
+.browser-2NpbWS,
+.loadingPopout-qYljDW,
+.contentTransitionWrap-3hqOEW,
+.role-2irmRk,
+.grabber-7sd5f5,
+.strikethrough-1n4ekb,
+
+.userProfileActivity-Bnt1p_,
+.userInfoSection-q_35fn,
+.messagesPopoutWrap-1MQ1bW{
+    animation: anim1 150ms ease;
+    transform-origin:center;
+}
+@keyframes anim1 {
+0% {
+    transform: scale(0);
+   }
+100% {
+    transform: scale(1);
+    }
+}
+
+/* Spotify betterdiscord stuff */
+button[player*="object Object"]{
+    transform:scale(0);
+    transition: transform 200ms ease;
+}
+.textScroller-dc9_kz{
+    overflow: visible !important;
+    max-width: 100px !important;
+}
+.subtext-3CDbHg{
+    overflow: visible;
+    margin-right: 2px;
+}
+.barText-lmqc5O{
+    height: 0;
+}
+.barText-lmqc5O .size12-3cLvbJ{
+    opacity: 0;
+}
+.size12-3cLvbJ{
+    transition: opacity 200ms ease, height 200ms ease;
+}
+.container-6sXIoE:hover .barText-lmqc5O{
+    height: inherit !important;
+}
+.container-6sXIoE:hover .size12-3cLvbJ{
+    opacity: 1;
+}
+.container-6sXIoE:hover .textScroller-dc9_kz{
+    overflow: hidden !important;
+}
+.container-6sXIoE:hover button[player*="object Object"]{
+    transform: scale(1);    
+    border-radius: 100px;
+    transform-origin: center;
+}
+.container-6sXIoE.maximized-vv2Wr0 button[player*="object Object"]{
+    transform: scale(1);
+}
+
+button[aria-label*="User Settings"]:hover .contents-18-Yxp{
+    transform: rotate(360deg);
+    transition: transform 2550ms ease;
+}
+
+/* opacity fade in anim */
+.coverWrapper-YAplwJ,
+.containerDefault--pIXnN, .containerDragAfter-3Fp7LC, .containerDragBefore-3iTCc7, .containerUserOver-2mv1jO,
+.children-19S4PO,
+.avatarUploaderInner-3UNxY3>*,
+.userProfileCustomizationSection-8Vpo48,
+.wrapper-2a6GCs{
+    animation: anim2 350ms ease;
+}
+@keyframes anim2 {
+    0% {
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+/* messages anim */
+
+@keyframes msganim {
+    0% {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+.message-2qnXI6 {
+  animation: msganim 0.4s ease;
+}
+
