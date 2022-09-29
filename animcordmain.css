@@ -161,6 +161,7 @@ transition: color 200ms ease;
     transform: scale(1.2);
     box-shadow: var(--applethingsbshadow);
     z-index: 3;
+    border-radius: 0px;
 }
 
 .embedVideo-2ixt5A .imageWrapper-oMkQl4:hover{
