@@ -37,6 +37,7 @@ a>.assetsLargeImageUserPopout-pY2WJv[src^="https://i.scdn.co/image/"]:hover .too
 {
     border-radius: 10px;
     transition: transform 200ms;
+    width: auto !important;
 }
 .item-1OdjEX,
 .embedSpotify-1rDvOE.embedWrapper-1MtIDg{
@@ -160,6 +161,7 @@ transition: color 200ms ease;
     transform: scale(1.2);
     box-shadow: var(--applethingsbshadow);
     z-index: 3;
+    border-radius: 0px;
 }
 
 .embedVideo-2ixt5A .imageWrapper-oMkQl4:hover{
